@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Adaptive Layout</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light text-dark">
+  <!-- Header -->
+  <header class="bg-primary text-white p-3 shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Bootstrap Adaptive Layout</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Main</a></li>
+                <li><a class="dropdown-item" href="#">Features</a></li>
+                <li><a class="dropdown-item" href="#">Gallery</a></li>
+                <li><a class="dropdown-item" href="#">Team</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Our Proposal
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Our products</a></li>
+                <li><a class="dropdown-item" href="#">Our service</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="container-fluid py-4">
+    <div class="row">
+      <!-- Carousel -->
+      <aside class="col-md-3 mb-3 bg-white rounded shadow-sm">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/image_1.jpg" class="d-block w-100 rounded" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/image_2.jpg" class="d-block w-100 rounded" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/image_3.jpg" class="d-block w-100 rounded" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/image_4.jpg" class="d-block w-100 rounded" alt="Image 4">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </aside>
+
+      <!-- Accordion -->
+      <section class="col-md-6 mb-3">
+        <p class="display-3 text-center mb-4">Featured Products</p>
+        <p class="lead text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nostrum,
+          architecto iure itaque
+          assumenda repellat accusamus quibusdam ad? Laborum, suscipit. Ab nisi facere beatae, modi numquam nihil
+          eligendi eos distinctio!</p>
+        <div class="accordion shadow-sm rounded bg-white" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button text-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-controls="collapseOne">
+                Section 1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nostrum, architecto iure itaque
+                assumenda repellat accusamus quibusdam ad? Laborum, suscipit. Ab nisi facere beatae, modi numquam nihil
+                eligendi eos distinctio!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Section 2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti sequi, quaerat aspernatur
+                fugiat ullam porro similique fuga veniam quasi earum recusandae reprehenderit accusamus explicabo
+                veritatis, placeat tempore quae officiis.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Request IT Services -->
+      <aside class="col-md-3 mb-3">
+        <h3 class="text-center text-dark mb-4">Request IT Services</h3>
+        <form class="p-3 bg-white rounded shadow-sm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="phone-number" class="form-label">Phone number:</label>
+            <div class="input-group">
+              <span class="input-group-text">+380</span>
+              <input type="tel" class="form-control" id="phone-number" name="phone-number"
+                placeholder="Enter your phone number">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message:</label>
+            <textarea class="form-control" id="message" name="message" placeholder="Write your message"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="interest" class="form-label">What IT topics are you interested in?</label>
+            <select class="form-select" id="interest" name="interest">
+              <option value="" disabled selected>Select your interest</option>
+              <option value="web-development">Web Development</option>
+              <option value="mobile-development">Mobile Development</option>
+              <option value="data-science">Data Science</option>
+              <option value="cybersecurity">Cybersecurity</option>
+              <option value="cloud-computing">Cloud Computing</option>
+              <option value="machine-learning">Machine Learning & AI</option>
+              <option value="devops">DevOps</option>
+              <option value="ui-ux-design">UI/UX Design</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="contact-method" class="form-label">Preferred contact method:</label>
+            <select class="form-select" id="contact-method" name="contact-method">
+              <option value="" disabled selected>Select contact method</option>
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+              <option value="messenger">Messenger</option>
+            </select>
+          </div>
+          <div class="form-check form-check-lg">
+            <input class="form-check-input" type="checkbox" id="agreement" name="agreement" required>
+            <label class="form-check-label" for="agreement">
+              I agree to the <a href="/terms-and-conditions" target="_blank">Terms and Conditions</a> and
+              <a href="/privacy-policy" target="_blank">Privacy Policy</a>.
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 mt-3">Submit</button>
+        </form>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center p-3">
+    <p class="small">&copy; NadiiaYevtushenko 2025</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
